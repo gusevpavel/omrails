@@ -1,6 +1,17 @@
-@import "bootstrap";
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: green;
 
-/* universal */
+
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+
+ /* universal 
+
+/* you can change the font
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+*/
 
 html {
   overflow-y: scroll;
@@ -9,6 +20,12 @@ html {
 body {
   padding-top: 60px;
 }
+
+.navbar-inner {
+    @include box-shadow(none !important);
+    border: 0;
+}
+
 
 section {
   overflow: auto;
@@ -70,4 +87,13 @@ p {
 #logo:hover {
   color: blue;
   text-decoration: none;
+}
+
+.footer {
+
+  margin-top: 50px;
+  color: $grayLight;
+  a {
+    color: $gray;
+  }
 }
